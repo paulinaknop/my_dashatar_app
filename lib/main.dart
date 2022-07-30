@@ -19,17 +19,25 @@ class _MyAppState extends State<MyApp> {
   // Color brown=Colors.brown;
   // Color black = Colors.black;
   // Color temp=Colors.white;
-  List<Color> colours=[Colors.white,
-  Colors.teal,Colors.black,Colors.pinkAccent,
-  Colors.red,Colors.purple];
-  int appBar=0;
-  int scaffold=0;
-  Random random=new Random();
-  List sounds=['SEU4_Kick_31.wav',
-  'SEU4_Ride_08.wav',
-  'SEU4_Snare_26.wav','SEU4_Tom_07.wav'];
-  int soundPosition=0;
-  final player=AudioCache();
+  List<Color> colours = [
+    Colors.white,
+    Colors.teal,
+    Colors.black,
+    Colors.pinkAccent,
+    Colors.red,
+    Colors.purple
+  ];
+  int appBar = 0;
+  int scaffold = 0;
+  Random random = new Random();
+  List sounds = [
+    'SEU4_Kick_31.wav',
+    'SEU4_Ride_08.wav',
+    'SEU4_Snare_26.wav',
+    'SEU4_Tom_07.wav'
+  ];
+  int soundPosition = 0;
+  final player = AudioPlayer();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,9 +48,12 @@ class _MyAppState extends State<MyApp> {
           centerTitle: true,
           // title: Text("$count"),
           title: IconButton(
-            icon: Icon(Icons.refresh,color: Colors.blueAccent,),
-            onPressed: (){
-              soundPosition=random.nextInt(4);
+            icon: Icon(
+              Icons.refresh,
+              color: Colors.blueAccent,
+            ),
+            onPressed: () {
+              soundPosition = random.nextInt(4);
             },
           ),
         ),
@@ -56,9 +67,9 @@ class _MyAppState extends State<MyApp> {
           onPressed: () {
             setState(() {
               // count++;
-              player.play(sounds[soundPosition]);
-              appBar=random.nextInt(6);
-              scaffold=random.nextInt(6);
+              player.play(AssetSource(sounds[soundPosition]));
+              appBar = random.nextInt(6);
+              scaffold = random.nextInt(6);
             });
           },
         ),
