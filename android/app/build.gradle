@@ -57,6 +57,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    namespace 'com.example.my_dashatar_app'
 }
 
 flutter {
