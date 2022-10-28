@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
             setState(() {
               String kick = "";
               // count++;
-              player.play(AssetSource(kick));
+              player.play(AssetSource(sounds[soundPosition]));
               appBar = random.nextInt(6);
               scaffold = random.nextInt(6);
             });
