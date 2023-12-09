@@ -1,16 +1,16 @@
-# my_dashatar_app
+# Dashatar App by Sagnik Bhattacharya || Coding Liquids.
 
-A new Flutter project.
+## Overview
+The Dashatar App is a basic Flutter application developed as an integral module of the "Complete Flutter Course" by Coding Liquids. This app serves as a hands-on introduction to Flutter development, guiding students through the process of building a functional application from scratch.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Installation & Setup
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `flutter pub get` to install dependencies.
+4. Run `flutter run` to start the app.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Acknowledgements
+A big thank you to all the students and supporters of the "Complete Flutter Course" by Coding Liquids.

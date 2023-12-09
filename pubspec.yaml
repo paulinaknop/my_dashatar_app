@@ -1,11 +1,11 @@
 name: my_dashatar_app
-description: A new Flutter project.
+description: The Dashatar App is a foundational Flutter application introduced in the "Complete Flutter Course" by Coding Liquids. This module provides learners with a step-by-step guide to creating a basic yet functional Flutter app, emphasizing core concepts and best practices.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=3.1.3 <4.0.0'
 
 dependencies:
   flutter:
@@ -14,11 +14,11 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
-  audioplayers: ^1.0.1
+  audioplayers: ^5.2.0
 
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.10.0
+  flutter_launcher_icons: ^0.13.1
 
   flutter_test:
     sdk: flutter
